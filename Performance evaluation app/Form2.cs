@@ -21,5 +21,16 @@ namespace Performance_evaluation_app
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
+            this.Hide();
+            Form1 form1 = new Form1();
+
+            form3.FormClosed += (s, args) => form1.Show();
+
+        }
     }
 }
