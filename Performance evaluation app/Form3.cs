@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace Performance_evaluation_app
 {
-    public partial class Form1 : Form
+    public partial class Form3 : Form
     {
-        public Form1()
+        public Form3()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form2 form2 = new Form2();
-            form2.Show();
-            this.Hide();
-
-
         }
     }
 }
