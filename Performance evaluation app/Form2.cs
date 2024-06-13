@@ -7,15 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace Performance_evaluation_app
 {
     public partial class Form2 : Form
     {
+        public static bool ridio_Check1;
+        public static bool ridio_Check2;
+        public static bool ridio_Check3;
+
         public Form2()
         {
             InitializeComponent();
         }
+
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -32,5 +38,33 @@ namespace Performance_evaluation_app
             form3.FormClosed += (s, args) => form1.Show();
 
         }
+      
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            ridio_Check1 = true;
+        }
+
+        private void radioButton9_CheckedChanged(object sender, EventArgs e)
+        {
+            ridio_Check2 = true;
+        }
+
+        private void radioButton12_CheckedChanged(object sender, EventArgs e)
+        {
+            ridio_Check3 = true;
+        }
+
+
     }
 }

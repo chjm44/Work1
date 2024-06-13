@@ -77,13 +77,14 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(202, 45);
+            this.radioButton3.Location = new System.Drawing.Point(204, 45);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(92, 16);
+            this.radioButton3.Size = new System.Drawing.Size(47, 16);
             this.radioButton3.TabIndex = 5;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
+            this.radioButton3.Text = "정답";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // radioButton4
             // 
@@ -130,6 +131,7 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "문제 1";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // groupBox2
             // 
@@ -183,11 +185,12 @@
             this.radioButton9.AutoSize = true;
             this.radioButton9.Location = new System.Drawing.Point(302, 49);
             this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(92, 16);
+            this.radioButton9.Size = new System.Drawing.Size(47, 16);
             this.radioButton9.TabIndex = 6;
             this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "radioButton9";
+            this.radioButton9.Text = "정답";
             this.radioButton9.UseVisualStyleBackColor = true;
+            this.radioButton9.CheckedChanged += new System.EventHandler(this.radioButton9_CheckedChanged);
             // 
             // radioButton10
             // 
@@ -230,11 +233,12 @@
             this.radioButton12.AutoSize = true;
             this.radioButton12.Location = new System.Drawing.Point(6, 46);
             this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(98, 16);
+            this.radioButton12.Size = new System.Drawing.Size(47, 16);
             this.radioButton12.TabIndex = 0;
             this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "radioButton12";
+            this.radioButton12.Text = "정답";
             this.radioButton12.UseVisualStyleBackColor = true;
+            this.radioButton12.CheckedChanged += new System.EventHandler(this.radioButton12_CheckedChanged);
             // 
             // radioButton13
             // 
@@ -279,6 +283,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Name = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
