@@ -65,6 +65,14 @@ namespace Performance_evaluation_app
             ridio_Check3 = true;
         }
 
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
