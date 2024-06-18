@@ -36,8 +36,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -87,61 +85,35 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(41, 214);
+            this.label3.Location = new System.Drawing.Point(106, 217);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 12);
+            this.label3.Size = new System.Drawing.Size(69, 12);
             this.label3.TabIndex = 5;
-            this.label3.Text = "객관식 1 : 오답";
-            this.label3.Visible = false;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.label3.Text = "정답 번호 : ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(41, 242);
+            this.label4.Location = new System.Drawing.Point(106, 242);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 12);
+            this.label4.Size = new System.Drawing.Size(65, 12);
             this.label4.TabIndex = 6;
-            this.label4.Text = "객관식 2 : 오답";
-            this.label4.Visible = false;
+            this.label4.Text = "오답 번호 :";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(41, 268);
+            this.label5.Location = new System.Drawing.Point(293, 230);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 12);
+            this.label5.Size = new System.Drawing.Size(37, 12);
             this.label5.TabIndex = 7;
-            this.label5.Text = "객관식 3 : 오답";
-            this.label5.Visible = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(259, 225);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 12);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "주관식 1 : 오답";
-            this.label6.Visible = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(259, 258);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(87, 12);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "주관식 2 : 오답";
-            this.label7.Visible = false;
+            this.label5.Text = "총점 :";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(505, 303);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -168,8 +140,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
     }
 }
 

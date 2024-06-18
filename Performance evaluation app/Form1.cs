@@ -38,29 +38,6 @@ namespace Performance_evaluation_app
         private void Form1_Load(object sender, EventArgs e)
         {
             
-            if (Form2.ridio_Check1 == true)
-            {
-            label3.Visible = true;
-            label3.Text = "객관식 1 : 정답";
-            }
-            
-            if (Form2.ridio_Check2 == true)
-            {
-            label4.Visible = true;
-            label4.Text = "객관식 2 : 정답";
-            }
-            
-            if (Form2.ridio_Check3 == true)
-            {
-                label5.Visible = true;
-                label5.Text = "객관식 3 : 정답";
-            }
-            
-            if (Form3.score1 == true)
-            {
-                label6.Visible = true;
-                label6.Text = "주관식 1 : 정답";
-            }
             
         }
 
