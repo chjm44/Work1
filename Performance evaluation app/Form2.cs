@@ -13,12 +13,16 @@ namespace Performance_evaluation_app
 {
     public partial class Form2 : Form
     {
-
-        public Form2()
+        private Form1 form;
+        public Form2(Form1 form)
         {
             InitializeComponent();
+            this.form = form;
         }
-
+        
+        public static string result;
+        public static string true_num = "";
+        public static string false_num ="";
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -36,15 +40,37 @@ namespace Performance_evaluation_app
 
         }
 
-        private void d()
-        {
-            string true_num = "";
-
+        private void radio()
+        { 
             if (radioButton3.Checked)
             {
                 true_num += "1 ";
             }
+            else
+            {
+                false_num += "1 ";
+            }
+            if (radioButton9.Checked)
+            {
+                true_num += "2 "; 
+            }
+            else
+            {
+                false_num += "2 ";
+            }
+            if (radioButton9.Checked)
+            {
+                true_num += "3 "; 
+            }
+            else
+            {
+                false_num += "3 ";
+            }
+
+            
+
         }
 
     }
-}
+
+    }

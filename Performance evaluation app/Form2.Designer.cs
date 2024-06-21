@@ -84,7 +84,6 @@
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "강동6주";
             this.radioButton3.UseVisualStyleBackColor = true;
-            
             // 
             // radioButton4
             // 

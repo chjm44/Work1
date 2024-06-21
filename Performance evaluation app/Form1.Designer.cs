@@ -90,6 +90,7 @@
             this.label3.Size = new System.Drawing.Size(69, 12);
             this.label3.TabIndex = 5;
             this.label3.Text = "정답 번호 : ";
+            this.label3.Visible = false;
             // 
             // label4
             // 
@@ -99,6 +100,7 @@
             this.label4.Size = new System.Drawing.Size(65, 12);
             this.label4.TabIndex = 6;
             this.label4.Text = "오답 번호 :";
+            this.label4.Visible = false;
             // 
             // label5
             // 
@@ -108,6 +110,7 @@
             this.label5.Size = new System.Drawing.Size(37, 12);
             this.label5.TabIndex = 7;
             this.label5.Text = "총점 :";
+            this.label5.Visible = false;
             // 
             // Form1
             // 
