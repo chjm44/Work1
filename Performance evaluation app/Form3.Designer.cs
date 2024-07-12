@@ -49,18 +49,18 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(32, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 12);
+            this.label1.Size = new System.Drawing.Size(135, 12);
             this.label1.TabIndex = 1;
-            this.label1.Text = "주관식 1번 :";
+            this.label1.Text = "주관식 1번 : \"개\" 영어로";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(32, 211);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 12);
+            this.label2.Size = new System.Drawing.Size(159, 12);
             this.label2.TabIndex = 2;
-            this.label2.Text = "주관식 2번 :";
+            this.label2.Text = "주관식 2번 : \"고양이\" 영어로";
             // 
             // textBox2
             // 
@@ -103,7 +103,6 @@
             this.Controls.Add(this.textBox1);
             this.Name = "Form3";
             this.Text = "Form3";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form3_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

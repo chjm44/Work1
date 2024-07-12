@@ -13,6 +13,8 @@ namespace Performance_evaluation_app
 {
     public partial class Form1 : Form
     {
+        public static string DataFormForm = string.Empty;
+        public static string DataFormForm1 = string.Empty;
 
         public Form1()
         {
@@ -21,12 +23,10 @@ namespace Performance_evaluation_app
 
         public void UpdateLabels()
         {
-            label3.Text = "정답 문항 : " + Form2.true_num;
-            label4.Text = "오답 문항 : " + Form2.false_num;
-            label5.Text = "총점 : ";
+            Wow.Text = "정답 문항 : ";
+            Oops.Text = "오답 문항 : ";
+            score.Text = "총점 : ";
 
-            label3.Visible = label4.Visible = label5.Visible = Form3.a;
-            button1.Enabled = Form3.b;
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -36,9 +36,9 @@ namespace Performance_evaluation_app
             }
             else
             {
+                this.Hide();
                 Form2 form2 = new Form2();
                 form2.Show();
-                this.Hide();
 
                 form2.FormClosed += (s, args) => this.Show();
             }
@@ -47,13 +47,19 @@ namespace Performance_evaluation_app
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
-            
+            UpdateLabels();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        public void UpdateLavels()
         {
+            string true_num = DataFormForm;
+            string false_num = DataFormForm1;
+            int scoreValue = true_num.Trim().Length;
 
+            Wow.Text = "맞은 번호: "+ true_num;
+            Oops.Text = "틀린 번호 " + false_num;
+
+            score.Text = "총점 " + scoreValue.ToString();
         }
 
         
