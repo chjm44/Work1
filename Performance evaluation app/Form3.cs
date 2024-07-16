@@ -25,8 +25,8 @@ namespace Performance_evaluation_app
 
         public Form3()
         {
-            this.form2 = form2 as Form2;
         }
+        
 
 
         private void button2_Click(object sender, EventArgs e)
@@ -37,10 +37,17 @@ namespace Performance_evaluation_app
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CollectResults();
-            this.Close();
-            form1.Show();
-            form1.UpdateLabels();
+            if (textBox1.Text =="" || textBox2.Text == "")
+            {
+                MessageBox.Show("정답을 입력해주시오.");
+            }
+            else
+            {
+                CollectResults();
+                this.Close();
+                form1.Show();
+                form1.UpdateLabels();
+            }
 
         }
 
@@ -54,25 +61,30 @@ namespace Performance_evaluation_app
 
             if (one.Equals("dog"))
             {
-                true_num += "4 ";
+                true_num += "4, ";
             }
             else
             {
-                false_num += "4 ";
+                false_num += "4, ";
             }
             if (two.Equals("cat"))
             {
-                true_num += "5 ";
+                true_num += "5";
             }
             else
             {
-                false_num += "5 ";
+                false_num += "5";
             }
             Form1.DataFormForm += true_num;
-            Form1.DataFormForm += false_num;
+            Form1.DataFormForm1 += false_num;
 
         }
 
-
+        private void Form3_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Hide();
+            form1 = new Form1();
+            form1.Show();
+        }
     }
 }

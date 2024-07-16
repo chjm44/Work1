@@ -21,13 +21,6 @@ namespace Performance_evaluation_app
             InitializeComponent();
         }
 
-        public void UpdateLabels()
-        {
-            Wow.Text = "정답 문항 : ";
-            Oops.Text = "오답 문항 : ";
-            score.Text = "총점 : ";
-
-        }
         private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == "" || textBox2.Text == "")
@@ -37,9 +30,8 @@ namespace Performance_evaluation_app
             else
             {
                 this.Hide();
-                Form2 form2 = new Form2();
+                Form2 form2 = new Form2(this);
                 form2.Show();
-
                 form2.FormClosed += (s, args) => this.Show();
             }
 
@@ -50,14 +42,22 @@ namespace Performance_evaluation_app
             UpdateLabels();
         }
 
-        public void UpdateLavels()
+        public void UpdateLabels()
         {
             string true_num = DataFormForm;
             string false_num = DataFormForm1;
-            int scoreValue = true_num.Trim().Length;
+            int scoreValue = true_num.Replace(", ", "").Length;
+
+            if (false_num == ""){
+                false_num = "0";
+            }
+            if (true_num == "")
+            {
+                true_num = "0";
+            }
 
             Wow.Text = "맞은 번호: "+ true_num;
-            Oops.Text = "틀린 번호 " + false_num;
+            Oops.Text = "틀린 번호: " + false_num;
 
             score.Text = "총점 " + scoreValue.ToString();
         }

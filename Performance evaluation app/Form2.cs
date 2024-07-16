@@ -13,67 +13,64 @@ namespace Performance_evaluation_app
 {
     public partial class Form2 : Form
     {
-        private Form1 form1;
+        private Form1 form1_;
         public Form2(Form1 form)
         {
             InitializeComponent();
-            form1 = form;
+            form1_ = form;
         }
+
         public Form2()
         {
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            CollectResults();
-            Form3 form3 = new Form3();
-            form3.Show();
-            this.Hide();
-            Form1 form1 = new Form1();
-
-            form3.FormClosed += (s, args) => form1.Show();
-
-        }
-
         private void CollectResults()
         {
-            string correctNum = "";
-            string incorrectNum = "";
+            string ONum = "";
+            string XNum = "";
 
             if (O1.Checked)
             {
-                correctNum += "1 ";
+                ONum += "1, ";
             }
             else
             {
-                incorrectNum += "1 ";
+                XNum += "1, ";
             }
 
             if (O2.Checked)
             {
-                correctNum += "2 ";
+                ONum += "2, ";
             }
             else
             {
-                incorrectNum += "2 ";
+                XNum += "2, ";
             }
 
             if (O3.Checked)
             {
-                correctNum += "3 ";
+                ONum += "3, ";
             }
             else 
-            { 
-                incorrectNum += "3 "; 
+            {
+                XNum += "3, "; 
             }
-            Form1.DataFormForm += correctNum;
-            Form1.DataFormForm1 += incorrectNum;
+            Form1.DataFormForm += ONum;
+            Form1.DataFormForm1 += XNum;
 
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            CollectResults();
+            this.Hide();
+            Form3 form3 = new Form3(form1_, this);
+            form3.Show();
         }
     }
 }

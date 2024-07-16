@@ -90,7 +90,6 @@
             this.Wow.Size = new System.Drawing.Size(69, 12);
             this.Wow.TabIndex = 5;
             this.Wow.Text = "정답 번호 : ";
-            this.Wow.Visible = false;
             // 
             // Oops
             // 
@@ -100,7 +99,6 @@
             this.Oops.Size = new System.Drawing.Size(65, 12);
             this.Oops.TabIndex = 6;
             this.Oops.Text = "오답 번호 :";
-            this.Oops.Visible = false;
             // 
             // score
             // 
@@ -110,7 +108,6 @@
             this.score.Size = new System.Drawing.Size(37, 12);
             this.score.TabIndex = 7;
             this.score.Text = "총점 :";
-            this.score.Visible = false;
             // 
             // Form1
             // 
