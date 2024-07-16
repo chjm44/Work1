@@ -25,6 +25,7 @@ namespace Performance_evaluation_app
 
         public Form3()
         {
+            this.form2 = form2 as Form2;
         }
         
 

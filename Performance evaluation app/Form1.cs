@@ -42,6 +42,7 @@ namespace Performance_evaluation_app
             UpdateLabels();
         }
 
+
         public void UpdateLabels()
         {
             string true_num = DataFormForm;
@@ -56,13 +57,13 @@ namespace Performance_evaluation_app
                 true_num = "0";
             }
 
+
             Wow.Text = "맞은 번호: "+ true_num;
             Oops.Text = "틀린 번호: " + false_num;
 
             score.Text = "총점 " + scoreValue.ToString();
         }
 
-        
 
 
     }
